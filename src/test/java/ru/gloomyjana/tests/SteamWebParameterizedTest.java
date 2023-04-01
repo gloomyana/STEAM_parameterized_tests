@@ -59,6 +59,6 @@ public class SteamWebParameterizedTest extends TestBase {
     })
     void menuShouldContainAllButtonsForChosenLanguage(String language, List<String> expectedButtons) {
         steamMainPage.changeLanguage(language);
-        steamMainPage.verifyMainMenuItemsExistence(expectedButtons);
+        steamMainPage.verifyMenuItemListExistence(expectedButtons);
     }
 }
