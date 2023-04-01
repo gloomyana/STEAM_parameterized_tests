@@ -31,8 +31,8 @@
 
 0) TEST DATA: [
     ["Русский (Russian)", ["МАГАЗИН", "СООБЩЕСТВО", "О STEAM", "ПОДДЕРЖКА"] ]
-    ["Русский (Russian)", ["МАГАЗИН", "СООБЩЕСТВО", "О STEAM", "ПОДДЕРЖКА"] ]
-    ["Русский (Russian)", ["МАГАЗИН", "СООБЩЕСТВО", "О STEAM", "ПОДДЕРЖКА"] ]
+    ["English (английский)", ["STORE", "COMMUNITY", "ABOUT", "SUPPORT"] ]
+    ["Français (French)", ["MAGASIN", "COMMUNAUTÉ", "À PROPOS", "SUPPORT"] ]
     ]
 1) TITLE: Для языка TEST DATA[0] на главной странице в меню должен отображаться список кнопок TEST DATA[1]
 2) PRIORITY / SEVERITY - BLOCKER, WEB
