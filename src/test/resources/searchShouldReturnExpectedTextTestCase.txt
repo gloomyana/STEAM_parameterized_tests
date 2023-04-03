@@ -1,0 +1,17 @@
+0) TEST DATA: [
+    ["indie", "ATOM RPG: Post-apocalyptic indie game"]
+    ["racing", "CarX Drift Racing Online"]
+    ["CS", "Counter-Strike: Global Offensive"]
+    ["3D", "Substance 3D Painter 2023"]
+    ["puzzle", "Gems of War - Puzzle RPG"]
+    ]
+1) TITLE: Поиск по TEST DATA[0] должен содержать верхний элемент TEST DATA[1] в выпадающем меню
+2) PRIORITY / SEVERITY - MAJOR, WEB
+3*) PRECONDITIONS:
+    - Открыть браузер Chrome;
+    - Открыть сайт магазина Steam https://store.steampowered.com (локаль EN)
+4) STEPS
+    - Ввести в графе поиска TEST DATA[0]
+    - Проверить, что по поиску TEST DATA[0] верхний элемент в выпадающем меню соответствует TEST DATA[1]
+5) EXPECTED RESULT
+    - Поиск по TEST DATA[0] содержит верхний элемент TEST DATA[1] в выпадающем меню

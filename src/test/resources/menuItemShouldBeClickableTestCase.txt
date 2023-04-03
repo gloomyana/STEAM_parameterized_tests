@@ -1,0 +1,10 @@
+0) TEST DATA: ["STORE", "COMMUNITY", "ABOUT", "SUPPORT"]
+1) TITLE: На главной странице в меню должен быть пункт TEST DATA[0] и он должен быть кликабельным.
+2) PRIORITY / SEVERITY - BLOCKER, WEB
+3*) PRECONDITIONS:
+    - Открыть браузер Chrome;
+    - Открыть сайт магазина Steam https://store.steampowered.com (локаль EN)
+4) STEPS
+    - Проверить, что на главной странице в меню есть пункт TEST DATA[0] и он кликабельный.
+5) EXPECTED RESULT
+    - На главной странице в меню есть пункт TEST DATA[0] и он кликабельный.
