@@ -1,7 +1,10 @@
 package ru.gloomyjana.pages;
 
+import com.codeborne.selenide.ElementsCollection;
+
 import java.util.List;
 
+import static com.codeborne.selenide.CollectionCondition.sizeGreaterThanOrEqual;
 import static com.codeborne.selenide.CollectionCondition.texts;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
@@ -11,10 +14,6 @@ public class SteamMainPage {
 
     public void openMainPage() {
         open("https://store.steampowered.com");
-    }
-
-    public void verifyMenuItemExistence(String menuItem) {
-        $(".supernav_container").shouldHave(text(menuItem));
     }
 
     public void verifyMenuItemClickable(String menuItem) {
@@ -35,6 +34,9 @@ public class SteamMainPage {
     }
 
     public void verifyMenuItemListExistence(List<String> expectedButtons) {
-        $$(".supernav_container").filter(visible).shouldHave(texts(expectedButtons));
+        ElementsCollection foundCollection = $$(".supernav_container .menuitem")
+                .shouldHave(sizeGreaterThanOrEqual(4));
+        ElementsCollection filteredCollection = foundCollection.filter(visible);
+        filteredCollection.shouldHave(texts(expectedButtons));
     }
 }

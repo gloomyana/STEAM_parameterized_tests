@@ -24,8 +24,7 @@ public class SteamWebParameterizedTest extends TestBase {
             @Tag("WEB")
     })
     @ParameterizedTest(name = "Menu item {0} exist and clickable")
-    void searchShouldReturnExpectedText(String menuItem) {
-        steamMainPage.verifyMenuItemExistence(menuItem);
+    void menuItemShouldBeClickable(String menuItem) {
         steamMainPage.verifyMenuItemClickable(menuItem);
     }
 
@@ -43,7 +42,7 @@ public class SteamWebParameterizedTest extends TestBase {
     static Stream<Arguments> ButtonsForChosenLanguage() {
         return Stream.of(
                 Arguments.of("Русский (Russian)",
-                        List.of("МАГАЗИН\n СООБЩЕСТВО\n О STEAM\n ПОДДЕРЖКА\n")),
+                        List.of("МАГАЗИН", "СООБЩЕСТВО", "О STEAM", "ПОДДЕРЖКА")),
                 Arguments.of("English (английский)",
                         List.of("STORE", "COMMUNITY", "ABOUT", "SUPPORT")),
                 Arguments.of("Français (French)",
