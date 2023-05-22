@@ -2,7 +2,7 @@
     ["indie", "ATOM RPG: Post-apocalyptic indie game"]
     ["racing", "CarX Drift Racing Online"]
     ["CS", "Counter-Strike: Global Offensive"]
-    ["3D", "Substance 3D Painter 2023"]
+    ["3D", "Room Planner - Design Home 3D - Pro"]
     ["puzzle", "Gems of War - Puzzle RPG"]
     ]
 1) TITLE: Поиск по TEST DATA[0] должен содержать верхний элемент TEST DATA[1] в выпадающем меню
