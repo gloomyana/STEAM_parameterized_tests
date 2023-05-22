@@ -1,9 +1,9 @@
-package ru.gloomyjana.tests;
+package ru.gloomyana.tests;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.chrome.ChromeOptions;
-import ru.gloomyjana.pages.SteamMainPage;
+import ru.gloomyana.pages.SteamMainPage;
 
 
 public class TestBase {

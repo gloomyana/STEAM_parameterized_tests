@@ -1,4 +1,4 @@
-package ru.gloomyjana.pages;
+package ru.gloomyana.pages;
 
 import com.codeborne.selenide.ElementsCollection;
 

@@ -1,4 +1,4 @@
-package ru.gloomyjana.tests;
+package ru.gloomyana.tests;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Tag;
